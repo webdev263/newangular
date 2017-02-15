@@ -16,17 +16,19 @@ app.controller('menuFavList', function ($scope) {
 */
 });
 
-app.controller ('siteLangList', ['$scope', function ($scope) {
 
-    $scope.preferredLang = 'UA';
+app.controller ('siteLangList', ['$scope', function($scope) {
+
+    $scope.preferredLang = 'RB';
     $scope.availLang = [
         {name:'UA', pic:'app/pics/ua.png'},
         {name:'RU', pic:'app/pics/rus.png'},
         {name:'RB', pic:'app/pics/bel.png'}
         ];
 
-    $scope.prefLangSelect = function (propName) {
-        $scope.preferredLang = propName;
+    $scope.prefLangSelect = function(prop) {
+        $scope.preferredLang = prop;
+        alert($scope.preferredLang);
     };
 
 }]);
