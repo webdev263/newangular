@@ -10,10 +10,10 @@ app.controller('menuFavList', function ($scope) {
         {name: 'Paints', popular: false},
         {name: 'Other', popular: false}];
 
-/*    $scope.isFav = function (param) {
+    $scope.isFav = function (param) {
             $scope.filter = param;
     };
-*/
+
 });
 
 
@@ -27,8 +27,9 @@ app.controller ('siteLangList', ['$scope', function($scope) {
         ];
 
     $scope.prefLangSelect = function(prop) {
-        $scope.preferredLang = prop;
-        alert($scope.preferredLang);
+        $scope.preferredLang = 'UA';
+
+        //alert($scope.preferredLang);
     };
 
 }]);
